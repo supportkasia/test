@@ -1,0 +1,37 @@
+# Fichiers Python inutiles
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dossiers virtuels / environnement
+.env
+.venv/
+env/
+venv/
+
+# Fichiers de config perso ou secrets
+*.log
+*.db
+*.sqlite
+*.bak
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Odoo specifics
+*.zip
+*.swp
+.idea/
+.vscode/
+*.egg-info/
+*.pot
+*.mo
+
+# Ignore les fichiers générés par tests ou builds
+/dist/
+*.egg
+/build/
+*.coverage
+*.tox/

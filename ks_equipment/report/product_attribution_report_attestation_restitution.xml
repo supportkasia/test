@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="action_report_product_attribution_restitution" model="ir.actions.report">
+            <field name="name">Attestation de Restitution</field>
+            <field name="model">product.attribution</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">ks_equipment.report_product_attribution_restitution_template</field>
+            <field name="print_report_name">'Attestation de Restitution - %s' % (object.employee_id.name)</field>
+            <field name="binding_model_id" ref="model_product_attribution"/>
+            <field name="binding_type">report</field>
+        </record> 
+
+        <template id="report_product_attribution_restitution_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <style>
+                                body { font-family: 'Times New Roman', Times, serif; font-size: 12pt; }
+                                .header-title { text-align: left; margin-bottom: 30px; }
+                                .content-paragraph { text-align: justify; margin-bottom: 10px; }
+                                .date-location-block { text-align: center; margin-top: 50px; margin-bottom: 30px; }
+                                .signature-block { margin-top: 100px; }
+                                .signature-item { margin-left: 50px; padding-top: 5px; }
+                            </style>
+
+                            <div class="header-title">
+                                <p>Objet : attestation de restitution d'un matériel prêté par l'entreprise</p>
+                            </div>
+
+                            <div class="content-paragraph">
+                                <p>Je soussigné, Madame Administrator, de l'entreprise atteste que Madame <span t-field="o.employee_id.name"/> a bien restitué le matériel <span t-field="o.product_id.name"/>.</p>
+                                <p>Par la présente, la société atteste avoir récupéré l'intégralité du matériel mis à la disposition du salarié.</p>
+                            </div>
+
+                            <div class="date-location-block">
+                                <p><b>Fait à <span t-field="env.company.city"/>, le <span t-esc="datetime.datetime.now().strftime('%d %B %Y')"/></b></p>
+                            </div>
+
+                            <div class="signature-block">
+                                <div class="signature-item">
+                                    <p>Signature</p>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

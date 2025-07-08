@@ -1,0 +1,413 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ks_equipment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20240927\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-08 05:47+0000\n"
+"PO-Revision-Date: 2025-07-08 05:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: ks_equipment
+#: model:ir.model.fields,help:ks_equipment.field_product_attribution__assigned_by_id
+msgid " Odoo users who created attribution"
+msgstr "Utilisateurs Odoo ayant créé l'attribution"
+
+#. module: ks_equipment
+#: model:ir.actions.report,print_report_name:ks_equipment.action_report_product_attribution_restitution
+msgid "'Attestation de Restitution - %s' % (object.employee_id.name)"
+msgstr "'Attestation de Restitution - %s' % (object.employee_id.name)"
+
+#. module: ks_equipment
+#: model:ir.actions.report,print_report_name:ks_equipment.hr_employee_print_badge
+msgid "'Badge'"
+msgstr "Lettre de Décharge"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "(Numéro de série :"
+msgstr "(Numéro de série :"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "), le"
+msgstr "), le"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid ""
+", ce dernier pourra être tenu de rembourser à l'entreprise la valeur de ce "
+"matériel qui s'élève à"
+msgstr ", ce dernier pourra être tenu de rembourser à l'entreprise la valeur de ce matériel qui s'élève à"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_restitution_template
+msgid ", le"
+msgstr ", le"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_form_view
+msgid "Annuler"
+msgstr "Annuler"
+
+#. module: ks_equipment
+#: model:ir.model.fields.selection,name:ks_equipment.selection__product_attribution__state__cancelled
+msgid "Annulé"
+msgstr "Annulé"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: ks_equipment
+#: model:ir.actions.report,name:ks_equipment.action_report_product_attribution_restitution
+msgid "Attestation de Restitution"
+msgstr "Attestation de Restitution"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_form_view
+msgid "Attribuer"
+msgstr "Attribuer"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_form_view
+msgid "Attribution de Matériel"
+msgstr "Attribution de Matériel"
+
+#. module: ks_equipment
+#: model:ir.ui.menu,name:ks_equipment.menu_product_attribution
+msgid "Attributions"
+msgstr "Attributions"
+
+#. module: ks_equipment
+#: model:ir.actions.act_window,name:ks_equipment.action_product_attribution
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_list_view
+msgid "Attributions de Matériel"
+msgstr "Attributions de Matériel"
+
+#. module: ks_equipment
+#: model:ir.model.fields.selection,name:ks_equipment.selection__product_attribution__state__assigned
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_search_view
+msgid "Attribué"
+msgstr "Attribué"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__assigned_by_id
+msgid "Attribué par"
+msgstr "Attribué par"
+
+#. module: ks_equipment
+#: model:ir.model.fields.selection,name:ks_equipment.selection__product_attribution__state__broken
+msgid "Cassé"
+msgstr "Cassé"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__category_id
+msgid "Catégorie du matériel"
+msgstr "Catégorie du matériel"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "Ce matériel demeure la propriété de l'entreprise."
+msgstr "Ce matériel demeure la propriété de l'entreprise."
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__create_uid
+msgid "Created by"
+msgstr "créé par"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__delivery_date
+msgid "Date de délivrance"
+msgstr "Date de délivrance"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__employee_id
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_search_view
+msgid "Employé"
+msgstr "Employé"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_restitution_template
+msgid "Fait à"
+msgstr "Fait à"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ks_equipment
+#: model:ir.model.fields,help:ks_equipment.field_product_attribution__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages nécessitent votre attention"
+
+#. module: ks_equipment
+#: model:ir.model.fields,help:ks_equipment.field_product_attribution__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur de livraison."
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "Il est convenu que Madame"
+msgstr "Il est convenu que Madame"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid ""
+"Il est précisé qu'en cas de détérioration ou de perte du matériel ainsi "
+"prêté, à la suite d'une faute lourde de Madame"
+msgstr "Il est précisé qu'en cas de détérioration ou de perte du matériel ainsi prêté, à la suite d'une faute lourde de Madame"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_is_follower
+msgid "Is Follower"
+msgstr "est Abonné"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_restitution_template
+msgid "Je soussigné, Madame Administrator, de l'entreprise atteste que Madame"
+msgstr "Je soussigné, Madame Administrator, de l'entreprise atteste que Madame"
+
+#. module: ks_equipment
+#: model:ir.ui.menu,name:ks_equipment.menu_ks_equipment_root
+msgid "KS Équipement"
+msgstr "KS Équipement"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__write_uid
+msgid "Last Updated by"
+msgstr "Derniere mise à jour par"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le "
+
+#. module: ks_equipment
+#: model:ir.actions.report,name:ks_equipment.hr_employee_print_badge
+msgid "Lettre de Décharge"
+msgstr "Lettre de Décharge"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "Madame"
+msgstr "Madame"
+
+#. module: ks_equipment
+#: model:ir.actions.act_window,name:ks_equipment.action_product_material
+msgid "Material"
+msgstr "Matériel"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__product_id
+#: model:ir.ui.menu,name:ks_equipment.menu_product_material
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_search_view
+msgid "Matériel"
+msgstr "Matériel"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_has_error
+msgid "Message Delivery error"
+msgstr " Erreur du Message d'envoi "
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__note
+msgid "Note"
+msgstr "Note"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_form_view
+msgid "Notes"
+msgstr "Notes"
+
+#. module: ks_equipment
+#: model:ir.model.fields.selection,name:ks_equipment.selection__product_attribution__state__new
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_search_view
+msgid "Nouveau"
+msgstr "Nouveau"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d erreurs"
+
+#. module: ks_equipment
+#: model:ir.model.fields,help:ks_equipment.field_product_attribution__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: ks_equipment
+#: model:ir.model.fields,help:ks_equipment.field_product_attribution__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de message avec erreur de livraisons"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__serial_number
+msgid "Numéro de série"
+msgstr "Numéro de série"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "Objet : Lettre de décharge"
+msgstr "Objet : Lettre de décharge"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_restitution_template
+msgid ""
+"Objet : attestation de restitution d'un matériel prêté par l'entreprise"
+msgstr "Objet : attestation de restitution d'un matériel prêté par l'entreprise"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "Par la présente lettre, l'entreprise"
+msgstr "Par la présente lettre, l'entreprise"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_restitution_template
+msgid ""
+"Par la présente, la société atteste avoir récupéré l'intégralité du matériel"
+" mis à la disposition du salarié."
+msgstr "Par la présente, la société atteste avoir récupéré l'intégralité du matériel mis à la disposition du salarié."
+
+#. module: ks_equipment
+#: model:ir.model.fields.selection,name:ks_equipment.selection__product_attribution__state__lost
+msgid "Perdu"
+msgstr "Perdu"
+
+#. module: ks_equipment
+#: model:ir.model.fields,help:ks_equipment.field_product_attribution__value
+msgid "Price at which the product is sold to customers."
+msgstr "Prix de vente aux clients"
+
+#. module: ks_equipment
+#: model:ir.model,name:ks_equipment.model_product_attribution
+msgid "Product Attribution"
+msgstr "Attribution de produit"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_search_view
+msgid "Rechercher des Attributions"
+msgstr "Rechercher des Attributions"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_search_view
+msgid "Regrouper par"
+msgstr "Regrouper par"
+
+#. module: ks_equipment
+#: model:ir.model.fields.selection,name:ks_equipment.selection__product_attribution__state__refunded
+msgid "Remboursé"
+msgstr "Remboursé"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_form_view
+msgid "Retourner"
+msgstr "Retourner"
+
+#. module: ks_equipment
+#: model:ir.model.fields.selection,name:ks_equipment.selection__product_attribution__state__returned
+msgid "Retourné"
+msgstr "Retourné"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__reference
+msgid "Référence"
+msgstr "Référence"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_restitution_template
+msgid "Signature"
+msgstr "Signature"
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__value
+msgid "Valeur du matériel"
+msgstr "Valeur du matériel"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_restitution_template
+msgid "a bien restitué le matériel"
+msgstr "a bien restitué le matériel"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "confie à Madame"
+msgstr "confie à Madame"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid "le matériel"
+msgstr "le matériel"
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid ""
+"ne pourra utiliser ce matériel à d'autres fins que des fins "
+"professionnelles, sans autorisation expresse et préalable de l'entreprise."
+msgstr "ne pourra utiliser ce matériel à d'autres fins que des fins professionnelles, sans autorisation expresse et préalable de l'entreprise."
+
+#. module: ks_equipment
+#: model_terms:ir.ui.view,arch_db:ks_equipment.report_product_attribution_decharge_template
+msgid ""
+"s'engage à restituer l'intégralité du matériel ainsi confié à la date "
+"convenue pour le rendre."
+msgstr "s'engage à restituer l'intégralité du matériel ainsi confié à la date convenue pour le rendre."
+
+#. module: ks_equipment
+#: model:ir.model.fields,field_description:ks_equipment.field_product_attribution__state
+#: model_terms:ir.ui.view,arch_db:ks_equipment.product_attribution_search_view
+msgid "État"
+msgstr "État"

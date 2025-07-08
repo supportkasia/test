@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   
+   <record id="hr_employee_print_badge" model="ir.actions.report">
+        <field name="name">Lettre de Décharge</field>
+        <field name="model">product.attribution</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">ks_equipment.report_product_attribution_decharge_template</field>
+        <field name="print_report_name">'Badge'</field>
+        <field name="binding_model_id" ref="model_product_attribution"/>
+        <field name="binding_type">report</field>
+    </record> 
+
+     <template id="report_product_attribution_decharge_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <style>
+                                body { font-family: 'Times New Roman', Times, serif; font-size: 12pt; }
+                                .header-title {  text-align: left; margin-bottom: 30px; }
+                                .content-paragraph { text-align: justify; margin-bottom: 10px; }
+                                .important-note { font-style: italic; margin-top: 20px; margin-bottom: 20px; }
+                                .date-location-block { text-align: center; margin-top: 50px; margin-bottom: 30px; }
+                                .signature-block { margin-top: 100px;}
+                                .signature-item { margin-left: 50px; padding-top: 5px; }
+                                .odoo-field { font-weight: bold; }
+                                .odoo-value { font-weight: normal; }
+                            </style>
+
+                            <div class="header-title">
+                                <p>Objet : Lettre de décharge</p>
+                            </div>
+
+                            <div class="content-paragraph">
+                                <p>Par la présente lettre, l'entreprise 
+                                    <span class="odoo-field" t-field="env.company.name"/> confie à Madame <b><span class="odoo-field" t-field="o.employee_id.name"/></b> le matériel <b><span class="odoo-field" t-field="o.product_id.name"/></b> (Numéro de série : <span class="odoo-field" t-field="o.serial_number"/>), le <span class="odoo-field" t-field="o.delivery_date" t-options='{"format": "dd MMMMYYYY"}'/>.</p>
+
+                                <p>Ce matériel demeure la propriété de l'entreprise.</p>
+
+                                <p>Il est convenu que Madame <b><span class="odoo-field" t-field="o.employee_id.name"/></b> ne pourra utiliser ce matériel à d'autres fins que des fins professionnelles, sans autorisation expresse et préalable de l'entreprise.</p>
+
+                                <p>Madame <b><span class="odoo-field" t-field="o.employee_id.name"/></b> s'engage à restituer l'intégralité du matériel ainsi confié à la date convenue pour le rendre.</p>
+                            </div>
+
+                            <div class="content-paragraph important-note">
+                                <p>Il est précisé qu'en cas de détérioration ou de perte du matériel ainsi prêté, à la suite d'une faute lourde de Madame <b><span class="odoo-field" t-field="o.employee_id.name"/></b>, ce dernier pourra être tenu de rembourser à l'entreprise la valeur de ce matériel qui s'élève à    <b><span class="odoo-field" t-field="o.value" t-options='{"widget": "monetary", "display_currency": o.env.company.currency_id}'/></b>.</p>
+                            </div>
+
+                            <div class="date-location-block">
+                                <p><b>Fait à <span t-field="env.company.city"/>, le <span t-esc="datetime.datetime.now().strftime('%d %B %Y')"/></b></p>
+                            </div>
+
+                            <div class="signature-block">
+                                <div class="signature-item">
+                                    <p>Signature</p>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+</odoo>
